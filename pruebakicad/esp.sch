@@ -23,16 +23,6 @@ Wire Wire Line
 	5800 4450 6050 4450
 Wire Wire Line
 	5800 4550 6050 4550
-Text GLabel 6050 4150 2    50   Input ~ 0
-SCK
-Text GLabel 6050 4250 2    50   Input ~ 0
-MISO
-Text GLabel 6050 4350 2    50   Input ~ 0
-SDA
-Text GLabel 6050 4450 2    50   Input ~ 0
-RST
-Text GLabel 6050 4550 2    50   Input ~ 0
-MOSI
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60796D28
@@ -61,8 +51,6 @@ Wire Wire Line
 	5200 5800 5200 5550
 Wire Wire Line
 	5800 3750 6050 3750
-Text GLabel 6050 3750 2    50   Input ~ 0
-SCL
 $Comp
 L RF_Module:ESP32-WROOM-32 U?
 U 1 1 60779D57
@@ -76,6 +64,18 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 $EndComp
 Wire Wire Line
 	5800 3550 6050 3550
-Text GLabel 6050 3550 2    50   Input ~ 0
+Text HLabel 6050 3550 2    50   Input ~ 0
 SDA
+Text HLabel 6050 3750 2    50   Input ~ 0
+SCL
+Text HLabel 6050 4150 2    50   Input ~ 0
+SCK
+Text HLabel 6050 4250 2    50   Input ~ 0
+MISO
+Text HLabel 6050 4350 2    50   Input ~ 0
+SDA
+Text HLabel 6050 4450 2    50   Input ~ 0
+RST
+Text HLabel 6050 4550 2    50   Input ~ 0
+MOSI
 $EndSCHEMATC
