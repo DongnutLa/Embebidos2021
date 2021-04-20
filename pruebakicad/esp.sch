@@ -65,17 +65,29 @@ $EndComp
 Wire Wire Line
 	5800 3550 6050 3550
 Text HLabel 6050 3550 2    50   Input ~ 0
-SDA
+SDAi2c
 Text HLabel 6050 3750 2    50   Input ~ 0
-SCL
+SCLi2c
 Text HLabel 6050 4150 2    50   Input ~ 0
 SCK
 Text HLabel 6050 4250 2    50   Input ~ 0
 MISO
 Text HLabel 6050 4350 2    50   Input ~ 0
-SDA
+SDAspi
 Text HLabel 6050 4450 2    50   Input ~ 0
 RST
 Text HLabel 6050 4550 2    50   Input ~ 0
 MOSI
+Wire Wire Line
+	5800 3150 6050 3150
+Text HLabel 6050 3150 2    50   Input ~ 0
+LED_in
+Wire Wire Line
+	5800 3350 6100 3350
+Text HLabel 6100 3350 2    50   Input ~ 0
+BUZ
+Wire Wire Line
+	5800 3450 6100 3450
+Text HLabel 6100 3450 2    50   Input ~ 0
+OBS
 $EndSCHEMATC
