@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -66,10 +66,10 @@ F 3 "" H 4300 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R5
+L Device:R_Small_US R10
 U 1 1 60810B34
 P 4050 4450
-F 0 "R5" H 4118 4496 50  0000 L CNN
+F 0 "R10" H 4118 4496 50  0000 L CNN
 F 1 "10k" H 4118 4405 50  0000 L CNN
 F 2 "" H 4050 4450 50  0001 C CNN
 F 3 "~" H 4050 4450 50  0001 C CNN
@@ -125,10 +125,10 @@ Wire Wire Line
 Wire Wire Line
 	4050 4700 4050 4800
 $Comp
-L Device:R_Small_US R6
+L Device:R_Small_US R11
 U 1 1 60810B54
 P 4050 4900
-F 0 "R6" H 4118 4946 50  0000 L CNN
+F 0 "R11" H 4118 4946 50  0000 L CNN
 F 1 "10k" H 4118 4855 50  0000 L CNN
 F 2 "" H 4050 4900 50  0001 C CNN
 F 3 "~" H 4050 4900 50  0001 C CNN
@@ -366,4 +366,78 @@ Wire Wire Line
 Connection ~ 6550 3650
 Wire Wire Line
 	6550 3650 6350 3650
+$Comp
+L Elementos:Conn_01x04 J?
+U 1 1 608DA23F
+P 7400 4750
+AR Path="/6077B277/608DA23F" Ref="J?"  Part="1" 
+AR Path="/6080574C/608DA23F" Ref="J5"  Part="1" 
+F 0 "J5" H 7480 4742 50  0000 L CNN
+F 1 "Conn_01x04" H 7480 4651 50  0000 L CNN
+F 2 "" H 7400 4750 50  0001 C CNN
+F 3 "~" H 7400 4750 50  0001 C CNN
+	1    7400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 608DA247
+P 6750 4800
+AR Path="/6077B277/608DA247" Ref="C?"  Part="1" 
+AR Path="/6080574C/608DA247" Ref="C6"  Part="1" 
+F 0 "C6" H 6550 4850 50  0000 L CNN
+F 1 "0.1uF" H 6450 4750 50  0000 L CNN
+F 2 "" H 6750 4800 50  0001 C CNN
+F 3 "~" H 6750 4800 50  0001 C CNN
+	1    6750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608DA251
+P 6750 4500
+AR Path="/6077B277/608DA251" Ref="#PWR?"  Part="1" 
+AR Path="/6080574C/608DA251" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 4350 50  0001 C CNN
+F 1 "+3.3V" H 6765 4673 50  0000 C CNN
+F 2 "" H 6750 4500 50  0001 C CNN
+F 3 "" H 6750 4500 50  0001 C CNN
+	1    6750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608DA257
+P 6750 5050
+AR Path="/6077B277/608DA257" Ref="#PWR?"  Part="1" 
+AR Path="/6080574C/608DA257" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 4800 50  0001 C CNN
+F 1 "GND" H 6755 4877 50  0000 C CNN
+F 2 "" H 6750 5050 50  0001 C CNN
+F 3 "" H 6750 5050 50  0001 C CNN
+	1    6750 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 7100 4750 0    50   Input ~ 0
+TXD0
+Text HLabel 7100 4850 0    50   Input ~ 0
+RXD0
+Wire Wire Line
+	7200 4750 7100 4750
+Wire Wire Line
+	7200 4850 7100 4850
+Wire Wire Line
+	6750 4500 6750 4650
+Wire Wire Line
+	6750 4900 6750 4950
+Wire Wire Line
+	7200 4650 6750 4650
+Connection ~ 6750 4650
+Wire Wire Line
+	6750 4650 6750 4700
+Wire Wire Line
+	7200 4950 6750 4950
+Connection ~ 6750 4950
+Wire Wire Line
+	6750 4950 6750 5050
 $EndSCHEMATC
