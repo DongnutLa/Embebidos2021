@@ -170,6 +170,8 @@ $Comp
 L Elementos:Conn_01x03_Obsta J3
 U 1 1 60810B73
 P 4750 5600
+AR Path="/60810B73" Ref="J3"  Part="1" 
+AR Path="/6080574C/60810B73" Ref="J3"  Part="1" 
 F 0 "J3" H 4830 5642 50  0000 L CNN
 F 1 "Conn_01x03" H 4830 5551 50  0000 L CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4750 5600 50  0001 C CNN
@@ -259,7 +261,7 @@ U 1 1 60832310
 P 6800 3350
 F 0 "J4" H 6850 3967 50  0000 C CNN
 F 1 "Conn_2Rows-15Pins" H 6850 3876 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x15_P1.00mm_Vertical" H 6800 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x09_P1.00mm_Vertical" H 6800 3350 50  0001 C CNN
 F 3 "~" H 6800 3350 50  0001 C CNN
 	1    6800 3350
 	1    0    0    -1  
