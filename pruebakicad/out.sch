@@ -174,7 +174,7 @@ AR Path="/60810B73" Ref="J3"  Part="1"
 AR Path="/6080574C/60810B73" Ref="J3"  Part="1" 
 F 0 "J3" H 4830 5642 50  0000 L CNN
 F 1 "Conn_01x03" H 4830 5551 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4750 5600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4750 5600 50  0001 C CNN
 F 3 "~" H 4750 5600 50  0001 C CNN
 	1    4750 5600
 	1    0    0    -1  
