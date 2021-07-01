@@ -270,19 +270,15 @@ Wire Wire Line
 	6600 2950 6350 2950
 Wire Wire Line
 	6350 2950 6350 2850
-Wire Wire Line
-	6600 3650 6550 3650
-Wire Wire Line
-	6350 3650 6350 3700
 $Comp
 L power:GND #PWR0110
 U 1 1 60833C66
-P 6350 3700
-F 0 "#PWR0110" H 6350 3450 50  0001 C CNN
-F 1 "GND" H 6355 3527 50  0000 C CNN
-F 2 "" H 6350 3700 50  0001 C CNN
-F 3 "" H 6350 3700 50  0001 C CNN
-	1    6350 3700
+P 6550 3800
+F 0 "#PWR0110" H 6550 3550 50  0001 C CNN
+F 1 "GND" H 6555 3627 50  0000 C CNN
+F 2 "" H 6550 3800 50  0001 C CNN
+F 3 "" H 6550 3800 50  0001 C CNN
+	1    6550 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -307,8 +303,6 @@ Wire Wire Line
 Wire Wire Line
 	6350 3450 6600 3450
 Wire Wire Line
-	6600 3550 6350 3550
-Wire Wire Line
 	7100 2950 7300 2950
 Wire Wire Line
 	7100 3050 7300 3050
@@ -318,10 +312,6 @@ Wire Wire Line
 	7100 3250 7300 3250
 Wire Wire Line
 	7100 3350 7300 3350
-Wire Wire Line
-	7100 3450 7300 3450
-Wire Wire Line
-	7100 3550 7300 3550
 Text HLabel 6350 3050 0    50   Input ~ 0
 IO13
 Text HLabel 6350 3150 0    50   Input ~ 0
@@ -332,7 +322,7 @@ Text HLabel 6350 3350 0    50   Input ~ 0
 IO17
 Text HLabel 6350 3450 0    50   Input ~ 0
 IO25
-Text HLabel 6350 3550 0    50   Input ~ 0
+Text HLabel 6000 3250 0    50   Input ~ 0
 IO26
 Text HLabel 7300 2950 2    50   Input ~ 0
 IO27
@@ -344,30 +334,23 @@ Text HLabel 7300 3250 2    50   Input ~ 0
 IO34
 Text HLabel 7300 3350 2    50   Input ~ 0
 IO35
-Text HLabel 7300 3450 2    50   Input ~ 0
-sensVP
 Text HLabel 7300 3550 2    50   Input ~ 0
+sensVP
+Text HLabel 6350 3550 0    50   Input ~ 0
 sensVN
-Wire Wire Line
-	7100 3650 7300 3650
 $Comp
 L power:+5V #PWR0112
 U 1 1 6083FA93
-P 7300 3650
-F 0 "#PWR0112" H 7300 3500 50  0001 C CNN
-F 1 "+5V" H 7315 3823 50  0000 C CNN
-F 2 "" H 7300 3650 50  0001 C CNN
-F 3 "" H 7300 3650 50  0001 C CNN
-	1    7300 3650
+P 7750 3750
+F 0 "#PWR0112" H 7750 3600 50  0001 C CNN
+F 1 "+5V" H 7765 3923 50  0000 C CNN
+F 2 "" H 7750 3750 50  0001 C CNN
+F 3 "" H 7750 3750 50  0001 C CNN
+	1    7750 3750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6600 3750 6550 3750
-Wire Wire Line
-	6550 3750 6550 3650
-Connection ~ 6550 3650
-Wire Wire Line
-	6550 3650 6350 3650
 $Comp
 L Elementos:Conn_01x04 J?
 U 1 1 608DA23F
@@ -442,4 +425,40 @@ Wire Wire Line
 Connection ~ 6750 4950
 Wire Wire Line
 	6750 4950 6750 5050
+Wire Wire Line
+	6550 3800 6550 3750
+$Comp
+L power:GND #PWR0139
+U 1 1 60DE4342
+P 7150 3700
+F 0 "#PWR0139" H 7150 3450 50  0001 C CNN
+F 1 "GND" H 7155 3527 50  0000 C CNN
+F 2 "" H 7150 3700 50  0001 C CNN
+F 3 "" H 7150 3700 50  0001 C CNN
+	1    7150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3700 7150 3650
+Wire Wire Line
+	7150 3650 7100 3650
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 60DE61D5
+P 6350 3700
+F 0 "#PWR0140" H 6350 3550 50  0001 C CNN
+F 1 "+3.3V" H 6365 3873 50  0000 C CNN
+F 2 "" H 6350 3700 50  0001 C CNN
+F 3 "" H 6350 3700 50  0001 C CNN
+	1    6350 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 3650 6350 3650
+Wire Wire Line
+	6350 3650 6350 3700
+Wire Wire Line
+	6600 3550 6350 3550
+Wire Wire Line
+	7300 3550 7100 3550
 $EndSCHEMATC
