@@ -261,7 +261,7 @@ U 1 1 60832310
 P 6800 3350
 F 0 "J4" H 6850 3967 50  0000 C CNN
 F 1 "Conn_2Rows-15Pins" H 6850 3876 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x09_P1.00mm_Vertical" H 6800 3350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Vertical" H 6800 3350 50  0001 C CNN
 F 3 "~" H 6800 3350 50  0001 C CNN
 	1    6800 3350
 	1    0    0    -1  
@@ -292,47 +292,27 @@ F 3 "" H 6350 2850 50  0001 C CNN
 	1    6350 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 3050 6350 3050
-Wire Wire Line
-	6600 3150 6350 3150
-Wire Wire Line
-	6600 3250 6350 3250
-Wire Wire Line
-	6600 3350 6350 3350
-Wire Wire Line
-	6350 3450 6600 3450
-Wire Wire Line
-	7100 2950 7300 2950
-Wire Wire Line
-	7100 3050 7300 3050
-Wire Wire Line
-	7100 3150 7300 3150
-Wire Wire Line
-	7100 3250 7300 3250
-Wire Wire Line
-	7100 3350 7300 3350
-Text HLabel 6350 3050 0    50   Input ~ 0
+Text HLabel 5900 2800 0    50   Input ~ 0
 IO13
-Text HLabel 6350 3150 0    50   Input ~ 0
+Text HLabel 5900 2900 0    50   Input ~ 0
 IO15
-Text HLabel 6350 3250 0    50   Input ~ 0
+Text HLabel 5900 3100 0    50   Input ~ 0
 IO16
-Text HLabel 6350 3350 0    50   Input ~ 0
+Text HLabel 5900 3000 0    50   Input ~ 0
 IO17
-Text HLabel 6350 3450 0    50   Input ~ 0
-IO25
-Text HLabel 6000 3250 0    50   Input ~ 0
-IO26
-Text HLabel 7300 2950 2    50   Input ~ 0
-IO27
-Text HLabel 7300 3050 2    50   Input ~ 0
-IO32
-Text HLabel 7300 3150 2    50   Input ~ 0
-IO33
 Text HLabel 7300 3250 2    50   Input ~ 0
-IO34
+IO25
+Text HLabel 6350 3250 0    50   Input ~ 0
+IO26
+Text HLabel 7300 3150 2    50   Input ~ 0
+IO27
 Text HLabel 7300 3350 2    50   Input ~ 0
+IO32
+Text HLabel 6350 3350 0    50   Input ~ 0
+IO33
+Text HLabel 7300 3450 2    50   Input ~ 0
+IO34
+Text HLabel 6350 3450 0    50   Input ~ 0
 IO35
 Text HLabel 7300 3550 2    50   Input ~ 0
 sensVP
@@ -461,4 +441,18 @@ Wire Wire Line
 	6600 3550 6350 3550
 Wire Wire Line
 	7300 3550 7100 3550
+Wire Wire Line
+	7100 3450 7300 3450
+Wire Wire Line
+	6600 3450 6350 3450
+Wire Wire Line
+	7300 3350 7100 3350
+Wire Wire Line
+	6600 3350 6350 3350
+Wire Wire Line
+	7300 3250 7100 3250
+Wire Wire Line
+	6600 3250 6350 3250
+Wire Wire Line
+	7300 3150 7100 3150
 $EndSCHEMATC
