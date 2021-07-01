@@ -102,7 +102,7 @@ U 1 1 60810B45
 P 4750 4600
 F 0 "J2" H 4838 4514 50  0000 L CNN
 F 1 "Conn_01x04_MountingPin" H 4838 4423 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical" H 4750 4600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4750 4600 50  0001 C CNN
 F 3 "~" H 4750 4600 50  0001 C CNN
 	1    4750 4600
 	1    0    0    -1  
@@ -247,7 +247,7 @@ AR Path="/60810B0A" Ref="J1"  Part="1"
 AR Path="/6080574C/60810B0A" Ref="J1"  Part="1" 
 F 0 "J1" H 4750 3800 50  0000 C CNN
 F 1 "Conn_01x08_RC522" H 4750 3700 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 4750 3300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4750 3300 50  0001 C CNN
 F 3 "~" H 4750 3300 50  0001 C CNN
 	1    4750 3300
 	1    0    0    -1  
@@ -261,7 +261,7 @@ U 1 1 60832310
 P 6800 3350
 F 0 "J4" H 6850 3967 50  0000 C CNN
 F 1 "Conn_2Rows-15Pins" H 6850 3876 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Vertical" H 6800 3350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x07_P2.54mm_Vertical" H 6800 3350 50  0001 C CNN
 F 3 "~" H 6800 3350 50  0001 C CNN
 	1    6800 3350
 	1    0    0    -1  
@@ -325,7 +325,7 @@ AR Path="/6077B277/608DA23F" Ref="J?"  Part="1"
 AR Path="/6080574C/608DA23F" Ref="J5"  Part="1" 
 F 0 "J5" H 7480 4742 50  0000 L CNN
 F 1 "Conn_01x04" H 7480 4651 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical" H 7400 4750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7400 4750 50  0001 C CNN
 F 3 "~" H 7400 4750 50  0001 C CNN
 	1    7400 4750
 	1    0    0    -1  
