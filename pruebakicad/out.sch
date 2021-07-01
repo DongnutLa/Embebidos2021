@@ -288,14 +288,6 @@ F 3 "" H 7700 3450 50  0001 C CNN
 	1    7700 3450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5900 2800 0    50   Input ~ 0
-IO13
-Text HLabel 5900 2900 0    50   Input ~ 0
-IO15
-Text HLabel 5900 3100 0    50   Input ~ 0
-IO16
-Text HLabel 5900 3000 0    50   Input ~ 0
-IO17
 Text HLabel 7300 3050 2    50   Input ~ 0
 IO26
 Text HLabel 7300 2950 2    50   Input ~ 0
