@@ -303,7 +303,7 @@ $EndComp
 Wire Wire Line
 	5750 4600 5750 4750
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L Connector:Barrel_Jack J6
 U 1 1 60E48AF7
 P 3350 3200
 F 0 "J6" H 3430 3192 50  0000 L CNN
