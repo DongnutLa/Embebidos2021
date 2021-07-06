@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:TLV1117-33 U?
+L Elementos:LM1117-3.3 U?
 U 1 1 6088E1E3
 P 4600 2000
 AR Path="/6088E1E3" Ref="U?"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tlv1117.pdf" H 4600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:TLV1117-50 U?
+L Elementos:TLV1117-50 U?
 U 1 1 6088E1E9
 P 4650 4250
 AR Path="/6088E1E9" Ref="U?"  Part="1" 
@@ -127,8 +127,6 @@ F 3 "~" H 5200 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 2000 5200 2000
-Wire Wire Line
 	5200 2000 5200 2100
 Wire Wire Line
 	4000 2000 4300 2000
@@ -217,7 +215,7 @@ F 3 "~" H 5200 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 4250 4950 4250
+	5200 4250 5050 4250
 Wire Wire Line
 	3950 4250 4350 4250
 Wire Wire Line
@@ -305,12 +303,12 @@ $EndComp
 Wire Wire Line
 	5750 4600 5750 4750
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J6
 U 1 1 60E48AF7
 P 3350 3200
-F 0 "J?" H 3430 3192 50  0000 L CNN
+F 0 "J6" H 3430 3192 50  0000 L CNN
 F 1 "Conn_01x02" H 3430 3101 50  0000 L CNN
-F 2 "" H 3350 3200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3350 3200 50  0001 C CNN
 F 3 "~" H 3350 3200 50  0001 C CNN
 	1    3350 3200
 	1    0    0    -1  
@@ -324,8 +322,8 @@ L power:+12V #PWR?
 U 1 1 60E4A1A7
 P 2900 3200
 AR Path="/60E4A1A7" Ref="#PWR?"  Part="1" 
-AR Path="/608889A3/60E4A1A7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2900 3050 50  0001 C CNN
+AR Path="/608889A3/60E4A1A7" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 2900 3050 50  0001 C CNN
 F 1 "+12V" H 2915 3373 50  0000 C CNN
 F 2 "" H 2900 3200 50  0001 C CNN
 F 3 "" H 2900 3200 50  0001 C CNN
@@ -337,12 +335,25 @@ L power:GND #PWR?
 U 1 1 60E4A59F
 P 2900 3300
 AR Path="/60E4A59F" Ref="#PWR?"  Part="1" 
-AR Path="/608889A3/60E4A59F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2900 3050 50  0001 C CNN
+AR Path="/608889A3/60E4A59F" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 2900 3050 50  0001 C CNN
 F 1 "GND" H 2905 3127 50  0000 C CNN
 F 2 "" H 2900 3300 50  0001 C CNN
 F 3 "" H 2900 3300 50  0001 C CNN
 	1    2900 3300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4950 4400 5050 4400
+Wire Wire Line
+	5050 4400 5050 4250
+Wire Wire Line
+	5000 2150 5000 2000
+Wire Wire Line
+	4900 2150 5000 2150
+Wire Wire Line
+	5000 2000 5200 2000
+Wire Wire Line
+	4900 2000 5000 2000
+Connection ~ 5000 2000
 $EndSCHEMATC
